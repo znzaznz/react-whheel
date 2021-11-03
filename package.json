@@ -1,0 +1,15 @@
+{
+  "name": "react-wheels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:znzaznz/react-whheel.git",
+  "author": "xiaoznz <779740337@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "typescript": "^4.4.4",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
