@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //引入htmlWebpackplugin包
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
@@ -20,5 +21,8 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: "./public/index.html" //模板文件自己选，自己写
+        })
     ],
 }
