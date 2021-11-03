@@ -6,8 +6,8 @@
   "author": "xiaoznz <779740337@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
     "@types/react": "^17.0.34",
