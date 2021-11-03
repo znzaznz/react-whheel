@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+    mode:'production',
     entry: './lib/index.tsx',
     output: {
         path: path.resolve(__dirname,'build/lib'), //这边之所以不能直接写path,是因为在每个不同的系统中写法不同

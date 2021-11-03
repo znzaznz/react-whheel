@@ -6,14 +6,15 @@
   "author": "xiaoznz <779740337@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "html-webpack-plugin": "^5.5.0",
     "typescript": "^4.4.4",
     "webpack": "^5.61.0",
