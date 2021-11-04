@@ -1,10 +1,11 @@
 {
   "name": "react-wheels",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/lib/index.js",
   "repository": "git@github.com:znzaznz/react-whheel.git",
   "author": "xiaoznz <779740337@qq.com>",
   "license": "MIT",
+  "types": "build/lib/index.tsx",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
