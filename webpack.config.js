@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const cssLoader = ()=>{
 
     return [
-        process.env.NODE_ENV ? 'style-loader' : MiniCssExtractPlugin.loader ,
+        process.env.NODE_ENV === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader ,
         "css-loader",
         {
             loader: "postcss-loader",
