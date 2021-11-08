@@ -1,5 +1,7 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom'
-import Button from './button';
+import Icon from "./icon_component/icon";
 
-ReactDOM.render(<Button/>,document.body)
+ReactDOM.render(<div>
+    <Icon name={'weibo'} />
+</div>,document.querySelector('#root'))

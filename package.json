@@ -22,9 +22,18 @@
     "babel-jest": "^24.3.1",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "dart-sass": "^1.25.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^24.3.1",
+    "mini-css-extract-plugin": "^2.4.4",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
     "react-test-renderer": "^17.0.2",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "svg-sprite-loader": "^6.0.11",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333",
     "webpack": "^5.61.0",
@@ -34,5 +43,11 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ]
 }
