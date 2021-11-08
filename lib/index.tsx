@@ -6,8 +6,16 @@ import './styles.scss'
 ReactDOM.render(<div className={'icon_section'}>
     <Icon name={'weibo'}/>
     <Icon name={'wechat'}/>
-    <Icon name={'qq'} onClick={(e: React.MouseEvent<SVGElement | SVGUseElement>) => {
-        console.log(e.currentTarget);
-        console.log((e.target as SVGUseElement).href);
-    }}/>
+    <Icon name={'qq'}
+          className={'qq'}
+          onClick={(e: React.MouseEvent<SVGElement | SVGUseElement>) => {
+              console.log(123);
+          }}
+          onMouseEnter={e=>{
+              console.log(345);
+          }}
+          onTouchStart={e=>{
+              console.log(783);
+          }}
+    />
 </div>, document.querySelector('#root'))
