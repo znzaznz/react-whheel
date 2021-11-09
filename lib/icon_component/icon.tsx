@@ -1,9 +1,9 @@
 import './importAll'
-import React, {SVGAttributes} from "react";
+import * as React from "react";
 import './styles.scss'
 import {classes} from "../utils/utils";
 
-interface configProps extends SVGAttributes<SVGElement> {
+interface configProps extends React.SVGAttributes<SVGElement> {
     name: string;
 }
 
