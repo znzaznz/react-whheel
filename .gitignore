@@ -1,6 +1,6 @@
-/node_modules
-/build
+node_modules
+build
 # 生成测试覆盖率的文件，忽略不提交
-/coverage
+coverage
 
 junit.xml
