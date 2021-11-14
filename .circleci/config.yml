@@ -3,6 +3,7 @@ defaults: &defaults
   docker:
     - image: circleci/node:8
 
+#在自己的Mac上添加circleci
 version: 2
 jobs:
   prepare:
