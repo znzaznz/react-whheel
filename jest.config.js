@@ -4,7 +4,7 @@ module.exports = {
     verbose: true,
     clearMocks: false,
     collectCoverage: false,  //是否收集测试覆盖率
-    reporters: ["default","jest-junit"],
+    reporters: ["default"],
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     moduleDirectories: ['node_modules'],
     globals: {
