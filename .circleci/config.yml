@@ -6,6 +6,7 @@ defaults: &defaults
 #在自己的Mac上添加circleci
 version: 2
 jobs:
+#  准备阶段
   prepare:
     <<: *defaults
     steps:
@@ -36,6 +37,8 @@ jobs:
             - package.json
             - LICENSE
             - README.md
+
+#        测试阶段
   test:
     <<: *defaults
     steps:
@@ -45,6 +48,8 @@ jobs:
       - run: yarn ci
       - store_test_results:
           path: test-results
+
+#          发布阶段
   publish:
     <<: *defaults
     steps:
