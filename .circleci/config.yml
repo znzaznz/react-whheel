@@ -9,7 +9,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
+      - restore_cache: # 加速代码的运行，给当前node-modules一个快照
           keys:
             - v2-dependencies-{{ checksum "package.json" }}
       - run: yarn install
@@ -51,8 +51,6 @@ jobs:
           at: .
       - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
       - run: npm publish
-
-
 
 workflows:
   version: 2
